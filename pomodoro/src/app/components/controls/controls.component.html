@@ -1,0 +1,11 @@
+
+<div class="controls">
+ 
+  
+    <button *ngIf="enPausa" (click)="startPomodoro()">Play</button>
+  
+    <!-- Muestra el botón "Pausa" si el cronómetro está en reproducción -->
+    <button *ngIf="!enPausa" (click)="pausePomodoro()">Pausa</button>
+    <button *ngIf="!enPausa" (click)="skipPomodoro()">Saltar Pomodoro</button>
+  </div>
+  

@@ -1,0 +1,76 @@
+header {
+    background-color: #256df3ab;
+    color: #91b9eec4;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-radius: 10px; 
+    margin-top: 10px;
+    
+  
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #3197eb;
+  }
+  
+  nav:hover {
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      max-width: 100%; /* El header ocupa todo el ancho en dispositivos de hasta 768px de ancho */
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 390px) {
+    header {
+      max-width: 100%;
+    }
+  
+    nav ul li a {
+      font-size: 12px; /* Reducir el tamaño del texto para adaptarse a la resolución */
+    }
+  }
+
+
+  nav ul li.active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+  }
+  
+  /* Estilo para el enlace dentro del elemento activo */
+  nav ul li.active a {
+    color: #fff; /* Color del texto del enlace cuando está activo */
+    text-decoration: none; /* Eliminar subrayado del enlace cuando está activo */
+  }

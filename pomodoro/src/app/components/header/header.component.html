@@ -1,0 +1,9 @@
+<header>
+    <nav>
+        <ul>
+            <li [class.active]="activeItem === 'work'"><a (click)="cambiarContador('pomodoro')">Work</a></li>
+            <li [class.active]="activeItem === 'short-break'"><a (click)="cambiarContador('short-break')">Short Break</a></li>
+            <li [class.active]="activeItem === 'large-break'"><a (click)="cambiarContador('large-break')">Large Break</a></li>
+        </ul>
+    </nav>
+</header>

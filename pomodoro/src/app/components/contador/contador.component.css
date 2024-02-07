@@ -1,0 +1,24 @@
+.contador {
+    text-align: center;
+ 
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiar la fuente */
+    color: #333; /* Color de texto */
+    border: 2px solid #ccc; /* Borde sólido */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #f8f8f8; /* Color de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    
+}
+h2{
+    font-size: 3rem; /* Tamaño de fuente más grande */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiar la fuente */
+    color: #333; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #f8f8f8; /* Color de fondo */
+  
+}

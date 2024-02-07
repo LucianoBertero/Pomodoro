@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 100%;
+height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+.container {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(131, 205, 248, 0.247); /* Fondo azul con transparencia */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    padding: 20px;
+    border-radius: 10%;
+    width: 25%;
+    max-height: 35%;
+    min-width: 200px;
+    max-width: 300px;
+  }
+  
+
+  /* 390*844 */
+
+
+  .settings-icon {
+    position: fixed; /* Hace que el icono tenga una posición fija en la pantalla */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+    color: #333; /* Color del icono */
+    font-size: 24px; /* Tamaño del icono */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+ 
+    padding: 10px;
+    border-right: 50%;
+  }
+  .settings-icon .settings-button {
+    background-color: #6cb2eb; /* Color de fondo azul claro */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .settings-icon .settings-button span {
+    margin-right: 10px; /* Espacio entre el texto y el ícono */
+    color: white; /* Color del texto blanco */
+  }
+  
+  .settings-icon .settings-button i {
+    color: white; /* Color del ícono blanco */
+  }
+  
+  h1{
+    font: 400 24px/1.5 'Roboto', sans-serif;
+    color: white;
+    letter-spacing: -0.75px;
+    line-height: 32px;
+    padding-right: 30px;
+    text-align: center;
+  }
+  
