@@ -24,7 +24,7 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
     padding: 20px;
     border-radius: 10%;
     width: 25%;
-    max-height: 35%;
+    max-height: 40%;
     min-width: 200px;
     max-width: 300px;
   }
@@ -70,7 +70,7 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
     color: white;
     letter-spacing: -0.75px;
     line-height: 32px;
-    padding-right: 30px;
+  
     text-align: center;
   }
   

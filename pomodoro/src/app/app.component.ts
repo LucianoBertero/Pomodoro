@@ -33,8 +33,8 @@ export class AppComponent {
     this.modalVisible = false;
     switch (opcion) {
       case 'pomodoro':
-        this.timeRemaining = 5;
-        // parseInt(localStorage.getItem('work') || '15', 10) * 60;
+        this.timeRemaining =
+          parseInt(localStorage.getItem('work') || '15', 10) * 60;
         let index = this.orden.indexOf(2);
         console.log(this.orden);
         if (index !== -1) {
@@ -47,8 +47,8 @@ export class AppComponent {
         this.cambiarContador('work');
         break;
       case 'short-break':
-        this.timeRemaining = 10;
-        // parseInt(localStorage.getItem('shortBreak') || '15', 10) * 60;
+        this.timeRemaining =
+          parseInt(localStorage.getItem('shortBreak') || '15', 10) * 60;
         let index2 = this.orden.indexOf(3);
         console.log(this.orden);
         if (index2 !== -1) {
@@ -61,8 +61,8 @@ export class AppComponent {
         this.cambiarContador('short-break');
         break;
       case 'large-break':
-        this.timeRemaining = 15;
-        // parseInt(localStorage.getItem('longBreak') || '15', 10) * 60;
+        this.timeRemaining =
+          parseInt(localStorage.getItem('longBreak') || '15', 10) * 60;
         const index3 = this.orden.indexOf(1);
         console.log(this.orden);
         if (index3 !== -1) {
@@ -94,7 +94,7 @@ export class AppComponent {
       let work = parseInt(localStorage.getItem('work') || '15', 10);
       console.log(work);
       console.log(longBreak);
-      this.timeRemaining = 5;
+      this.timeRemaining = work * 60;
       this.contar();
       return;
     }
@@ -107,7 +107,7 @@ export class AppComponent {
       let work = parseInt(localStorage.getItem('work') || '15', 10);
       console.log(work);
       console.log(shortBreak);
-      this.timeRemaining = 10;
+      this.timeRemaining = shortBreak * 60;
       this.contar();
       return;
     }
@@ -117,10 +117,9 @@ export class AppComponent {
       this.cambiarContador('large-break');
       console.log('pausa larga');
       let longBreak = parseInt(localStorage.getItem('longBreak') || '15', 10);
-      let work = parseInt(localStorage.getItem('work') || '15', 10);
-      console.log(work);
+
       console.log(longBreak);
-      this.timeRemaining = 15;
+      this.timeRemaining = longBreak * 60;
       this.contar();
       return;
     }
@@ -166,11 +165,7 @@ export class AppComponent {
   }
 
   openModal() {
-    this.modalVisible = !this.modalVisible;
-  }
-
-  closeModal() {
-    this.modalVisible = false;
+    this.modalVisible = true;
   }
 
   saltarPomodoro() {
@@ -180,6 +175,13 @@ export class AppComponent {
   cambiarContador(item: string) {
     this.activeItem = item;
     // Aquí puedes agregar la lógica adicional si es necesario
+  }
+
+  ocultarModal() {
+    console.log('activo');
+    this.modalVisible = false;
+    this.timeRemaining = parseFloat(localStorage.getItem('work') || '15') * 60;
+    console.log(this.timeRemaining);
   }
 }
 

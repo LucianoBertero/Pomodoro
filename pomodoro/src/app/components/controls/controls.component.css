@@ -1,0 +1,36 @@
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .controls button {
+    background-color: #3197eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #256df3;
+  }
+  
+  /* Estilo específico para el botón "Play" */
+  .controls button.play {
+    background-color: #4caf50;
+  }
+  
+  /* Estilo específico para el botón "Pausa" */
+  .controls button.pause {
+    background-color: #ff9800;
+  }
+  
+  /* Estilo específico para el botón "Saltar Pomodoro" */
+  .controls button.skip {
+    background-color: #e91e63;
+  }
+  

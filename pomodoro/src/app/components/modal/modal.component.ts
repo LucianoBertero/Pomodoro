@@ -1,4 +1,10 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { Injectable } from '@angular/core';
 import { NgForm } from '@angular/forms';
 @Component({
@@ -8,6 +14,7 @@ import { NgForm } from '@angular/forms';
 })
 export class ModalComponent {
   @ViewChild('modalBackground') modalBackground?: ElementRef;
+  @Output() ocultarModal = new EventEmitter<string>();
   work: number = 25;
   shortBreak: number = 5;
   longBreak: number = 15;
@@ -23,6 +30,7 @@ export class ModalComponent {
 
   cerrarModal() {
     this.mostrar = false;
+    this.ocultarModal.emit('true');
   }
   guardarConfiguracion() {
     const workValue = (document.getElementById('work') as HTMLInputElement)

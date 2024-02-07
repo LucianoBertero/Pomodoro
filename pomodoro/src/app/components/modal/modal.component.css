@@ -12,11 +12,13 @@
 }
 
 .modal-content {
-    background-color: #7bb1ee;
-    padding: 20px;
+    background-color:  rgb(50, 99, 128);; /* Cambiado a color azul */
+    color: #fff; /* Texto en color blanco */
+    padding-top: 470x;
     border-radius: 10px;
     max-width: 400px; /* Ancho máximo del modal */
-    width: 100%;
+    width: 70%;
+    margin-top: -320px;
 }
 
 .modal-header {
@@ -30,6 +32,8 @@
 
 .modal-item {
     margin-bottom: 10px;
+    text-align: center;
+    
 }
 
 .modal-item label {
@@ -42,13 +46,19 @@
     padding: 8px;
     border: 1px solid #63bce68e;
     border-radius: 5px;
+    background-color: #fff; /* Fondo blanco para los inputs */
 }
 
 .modal-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Alinear los botones al extremo derecho */
+    margin-top: 20px; /* Añadir espacio superior */
 }
 
+.modal-footer button {
+    margin-left: 10px; /* Ajustar el margen izquierdo entre los botones */
+    background-color: #3197eb;
+}
 .btn-cancel,
 .btn-save {
     padding: 10px 20px;
@@ -58,16 +68,27 @@
 }
 
 .btn-cancel {
-    background-color: #ccc;
-    color: #333;
+    background-color: #3197eb;
+    color: #fff;
 }
 
 .btn-save {
-    background-color: #007bff;
+    background-color: #3197eb;
     color: #fff;
 }
+
 .invalid {
     border: 1px solid red; 
     background-color: rgba(255, 0, 0, 0.171);
-  }
-  
+}
+
+input{
+    max-width: 70%;
+}
+.modal-item input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #63bce68e;
+    border-radius: 5px;
+    text-align: center; /* Centrar el texto dentro del input */
+}

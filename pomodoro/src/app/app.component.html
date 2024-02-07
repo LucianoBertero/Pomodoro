@@ -67,6 +67,6 @@
   </button>
 </div>
 
-<app-modal *ngIf="modalVisible" (click)="openModal()"></app-modal>
+<app-modal *ngIf="modalVisible===true" (click)="openModal()" (ocultarModal)="ocultarModal()" ></app-modal>
 
 </body>

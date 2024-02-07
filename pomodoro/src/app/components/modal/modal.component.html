@@ -1,4 +1,4 @@
-<div  *ngIf="mostrar" class="modal-background" #modalBackground>
+<div   class="modal-background" #modalBackground>
     <div class="modal-content">
         <div class="modal-header">
             <h2>Configuración del Pomodoro</h2>
@@ -21,7 +21,7 @@
             
         </div>
         <div class="modal-footer">
-            <button (click)="cerrarModal()">Cancelar</button>
+            <button  class="btn-cancel" (click)="cerrarModal()">Cancelar</button>
             <button (click)=" guardarConfiguracion()" class="btn-save">Guardar</button>
         </div>
     </div>
