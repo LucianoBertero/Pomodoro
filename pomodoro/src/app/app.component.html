@@ -52,11 +52,11 @@
 
 
 <div class="container">
- 
+  <h1>POMODORO</h1>
   <app-header  [activeItem]="activeItem" (contadorCambiado)="actualizarContador($event)"></app-header>
   <app-contador [tiempo]="formatTime(timeRemaining)"></app-contador>
   
-  <app-controls (start)="startPomodoro()" (stop)="stopPomodoro()" (skip)="saltarPomodoro()" ></app-controls>
+  <app-controls (start)="startPomodoro()"  [pausa]="enPausa" (stop)="stopPomodoro()" (skip)="saltarPomodoro()" ></app-controls>
  
 
 </div>

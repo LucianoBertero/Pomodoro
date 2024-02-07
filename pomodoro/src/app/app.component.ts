@@ -14,6 +14,7 @@ export class AppComponent {
   timeRemaining: number = this.durationInSeconds; // Tiempo restante del pomodoro, inicialmente igual a la duración
   activeItem = 'work';
   timerInterval: any = this.timeRemaining;
+  enPausa = false;
 
   //TODO 1. Crear un método para actualizar el contador
   //TODO 2. Crear un método para iniciar el contador
@@ -29,7 +30,9 @@ export class AppComponent {
   // Variable para almacenar el tiempo restante
 
   actualizarContador(opcion: string) {
+    this.enPausa = true;
     this.stopPomodoro();
+    console.log(this.enPausa);
     this.modalVisible = false;
     switch (opcion) {
       case 'pomodoro':
@@ -81,6 +84,7 @@ export class AppComponent {
   // Variable para almacenar el intervalo del temporizador
 
   startPomodoro() {
+    this.enPausa = false;
     if (this.pausado === true) {
       this.contar();
       this.pausado = false;
@@ -155,6 +159,7 @@ export class AppComponent {
   stopPomodoro() {
     clearInterval(this.timerInterval);
     this.pausado = true;
+    this.enPausa = true;
   }
   formatTime(seconds: number): string {
     const minutes: number = Math.floor(seconds / 60);

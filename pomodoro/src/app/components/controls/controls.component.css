@@ -13,6 +13,7 @@
     margin-right: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    height:2rem;
   }
   
   .controls button:hover {
